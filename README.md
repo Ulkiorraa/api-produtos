@@ -68,3 +68,11 @@ curl -X PUT -H "Content-Type: application/json" -d '{"nome": "Novo Nome", "preco
 ```bash
 curl -X DELETE http://localhost:3000/produtos/1
 ```
+
+## Contribuições
+
+Sinta-se à vontade para contribuir com melhorias ou correções neste projeto. Abra uma "issue" para discutir as mudanças que você deseja fazer e envie um "pull request" com suas alterações.
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](LICENSE).
