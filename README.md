@@ -27,6 +27,6 @@ module.exports = {
     password: 'sua_senha',
     database: 'sua_base_de_dados',
   },
-};```
+};
 
 ## Uso
