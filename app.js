@@ -60,7 +60,7 @@ app.post("/produtos", (req, res) => {
   db.query(
     "INSERT INTO produtos (codigo, nome, preco) VALUES (?, ?, ?)",
     [codigo, nome, preco],
-    (err, results) => {
+    (err) => {
       if (err) {
         res.status(500).json({ error: "Erro ao inserir produto" });
         return;
@@ -76,7 +76,7 @@ app.put("/produtos/:codigo", (req, res) => {
   db.query(
     "UPDATE produtos SET nome = ?, preco = ? WHERE codigo = ?",
     [nome, preco, codigo],
-    (err, results) => {
+    (err) => {
       if (err) {
         res.status(500).json({ error: "Erro ao atualizar produto" });
         return;
@@ -91,7 +91,7 @@ app.delete("/produtos/:codigo", (req, res) => {
   db.query(
     "DELETE FROM produtos WHERE codigo = ?",
     [codigo],
-    (err, results) => {
+    (err) => {
       if (err) {
         res.status(500).json({ error: "Erro ao excluir produto" });
         return;
